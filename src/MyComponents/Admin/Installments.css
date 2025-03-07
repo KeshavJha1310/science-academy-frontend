@@ -1,0 +1,19 @@
+.AdminPanel_Installment{
+    position: relative;
+    background-color: #0F1A2D ;
+    height: 100vh;
+}
+@media(max-width:700px) {
+    .AdminPanel_Installment{
+        position: relative;
+        background-color: #0F1A2D ;
+        height: 100%;
+    }
+
+}
+@media (max-height:460px){
+    .AdminPanel_Installment{
+        height: 100%;
+    }
+
+}

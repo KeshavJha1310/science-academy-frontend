@@ -1,0 +1,233 @@
+:root {
+  
+  --primary-color: #0d0d0d;
+  --secondary-color: #fff;
+  --text-color: #fff;
+  --text-color-2: #fff;
+  --overlay-color: rgb(12 12 12 / 63%);
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --primary-color: #ffffff;
+  --secondary-color: #000;
+  --text-color: #000;
+  --text-color-2: #000;
+  --overlay-color: rgb(255 255 255 );
+}
+.social-icons {
+  align-items:center;
+  justify-content:center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+@media screen and (max-device-width: 480px) and (orientation: landscape){
+  .social-icons {
+    align-items:center;
+    justify-content:center;
+    
+    margin-top: 20px;
+  }
+  .social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color:white;
+    transition: color 0.3s ease-in-out;
+  }
+} 
+
+.social-icon {
+  display: inline-block;
+  margin-right: 60px;
+ color:white;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+.social-icon.whatsapp:hover {
+  color: #4caf50;
+}
+
+.social-icon.instagram:hover {
+  color: #ff69b4;
+}
+ hr{
+  height:1px;
+  background-color:white;
+  color:white;
+}
+
+.Container {
+  margin: 0;
+  height: 100%;
+  
+  background-color:black;
+  color: var(--text-color);
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 60px;
+  border-left: 10px solid var(--primary-color);
+  border-right: 10px solid var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+
+.h2{
+  font-family: 'Poppins', sans-serif; 
+}
+
+a,
+a:hover {
+  color: var(--text-color);
+}
+
+p {
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.ovhidden {
+  overflow: hidden;
+}
+
+.text_2,
+.text_2:hover {
+  color: var(--text-color-2);
+}
+
+code {
+ font-family: 'Acme', sans-serif;  
+ font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Hind', sans-serif;
+  font-family: 'Poppins', sans-serif; 
+  font-family: 'Bebas Neue', sans-serif;
+
+  
+   font-family: 'PT Sans', sans-serif; 
+   font-family: 'Bebas Neue', sans-serif;
+
+   font-family: 'Tangerine', cursive;
+}
+.cursor__dot div {
+  z-index: 999999 !important;
+}
+
+.cursor__dot div:last-child {
+  filter: invert(1);
+  background-color: var(--primary-color) !important;
+}
+
+.cursor__dot div:first-child {
+  filter: invert(1);
+  background-color: var(--overlay-color) !important;
+}
+
+.color_pr {
+  color: var(--primary-color) !important;
+}
+
+.color_sec {
+  color: var(--secondary-color);
+}
+
+.contact__form .form-control {
+  padding: 1.375rem .75rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 0 !important;
+  border: 1px solid var(--secondary-color);
+}
+
+.contact__form input.form-control {
+  margin-bottom: 2em;
+  height: calc(2.5em + .75rem + 2px);
+}
+
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 999999999;
+  background: var(--text-color);
+  transform: translateX(100%);
+  animation: shift-rightwards 1s ease-in-out infinite;
+  animation-delay: .3s;
+}
+
+@keyframes shift-rightwards {
+  0% {
+      transform: translateX(-100%);
+  }
+  40% {
+      transform: translateX(0%);
+  }
+  60% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.btn {
+  color: #fff;
+  border-radius: 10px;
+  /* Additional button styling */
+  background-color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  /* Additional hover effect */
+  background-color: #0056b3;
+}
+.hr {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 1px;
+  height: 1px; /* Adjust the height as needed */
+  background-color: white;
+  transform: rotate(90deg);
+}
+.email-label {
+  color: #9c8b62; /* Slightly warmer shade */
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+.email-id {
+  margin-left: 8px; /* Reduce margin for better alignment */
+  color: #FFD700; /* Gold for better contrast */
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.email-id:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #ffcc00;
+}
+
+.add-info {
+  padding: 12px; /* Slightly increased padding */
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6; /* Improve readability */
+  color: #ccc; /* Soft gray for readability */
+}
+
+

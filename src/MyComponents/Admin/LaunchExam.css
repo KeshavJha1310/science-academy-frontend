@@ -1,0 +1,32 @@
+.AdminPanel_LaunchExam{
+    position: relative;
+    background-color: #0F1A2D ;
+    height: 100vh;
+}
+.launchExamhForm{
+    position: relative;
+    display: flex;
+}
+
+@media(max-width:700px) {
+    .AdminPanel_LaunchExam{
+        position: relative;
+        background-color: #0F1A2D ;
+        height: 100%;
+    }
+    .launchExamhForm{
+        position: relative;
+        display: flex;
+        height: 100vh;
+    }
+}
+@media (max-height:460px){
+    .AdminPanel_LaunchExam{
+        height: 100%;
+    }
+    .launchExamhForm{
+        position: relative;
+        display: flex;
+        height: 100%;
+    }
+}

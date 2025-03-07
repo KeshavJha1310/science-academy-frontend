@@ -1,0 +1,149 @@
+/* General styling for the Admin Panel */
+.AdminPanel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative !important;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0F1A2D !important; /* Light background for a cleaner look */
+}
+
+/* Styling for the underline element below headings */
+.underline {
+  border: none;
+  border-top: 2px solid #3498db; /* Use a modern color */
+  width: 80px;
+  margin-top: 5px; /* Add space between text and underline */
+  margin-bottom: 20px; /* Space under the underline */
+}
+
+/* Styling for the card container */
+.StudentsList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5em; /* Give some padding at the top */
+  width: 90%;
+  height: 100%;
+  max-width: 1200px; /* Limit width for better readability */
+}
+
+/* Search bar positioning and styling */
+.SearchBar {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  color: black;
+}
+
+.searchInput:focus {
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Add a subtle shadow effect */
+  color: black;
+}
+
+
+
+/* Headings styling */
+.heading {
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Styling for each section (Primary, Secondary, etc.) */
+.Primary,
+.Secondary,
+.BoardsList,
+.Higher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Add space between cards */
+  margin-bottom: 50px; /* Space between sections */
+}
+
+/* Styling for individual cards */
+.cardlist {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardlist:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Elevate card on hover */
+}
+
+.card-img-top1 {
+  border-radius: 50%; /* Make image circular */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #777;
+}
+
+.ac_btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ac_btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .StudentsList {
+    padding-top: 2em;
+  }
+
+  .SearchBar {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .cardlist {
+    width: 100%;
+    max-width: 300px;
+  }
+}

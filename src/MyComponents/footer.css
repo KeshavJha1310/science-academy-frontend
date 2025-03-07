@@ -1,0 +1,24 @@
+.Footer{
+    position:relative ;
+   
+    margin: 15px auto 0px;
+   height:100%;
+    width:100%;
+    background-color:  #FFFF99;
+}
+
+.row .navbar-brand {
+    color:white;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+.row .navbar-quick {
+    color:white;
+    margin-top:28px;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+h5{
+    font-size:20px;
+}

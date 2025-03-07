@@ -1,0 +1,415 @@
+
+
+.about{
+    position:relative ;
+    display: flex;
+    flex-direction: column;
+   
+ 
+     background: rgb(211, 211, 211);
+    margin: 100px auto 0;
+    word-break: break-all;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+     margin: 30px auto 0px;
+    height:100%;
+    width:100%;
+   
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  
+
+  
+  .bloc-tabs {
+    display: flex;
+  }
+  .tabs {
+    font-weight:bold;
+    height:10px;
+    font-size:20px;
+    padding: 15px;
+    color:black;
+    text-align: center;
+    width: 50%;
+    background: rgb(211, 211, 211);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+  }
+  .tabs:not(:last-child){
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .active-tabs  {
+   font-size:0px;
+    /*  font-weight:bold; */
+    color:black;
+    background-color: #3c3c3c;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://wallpaperaccess.com/full/521111.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .active-tabs::before {
+    color:white;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: rgb(88, 147, 241);
+  }
+  
+  
+  
+  button {
+    border: none;
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+  .content {
+    color:white;
+    background-color: #3c3c3c;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://wallpaperaccess.com/full/521111.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .content .h2 {
+    padding: 0px 0 5px 0px;
+  }
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+  .feature p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+  }
+
+  .h1 {
+    font-size: 1em;
+}
+
+main {
+    margin: 20px;
+}
+
+.feature {
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.feature-end {
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feature .h2{
+    /* font-weight: bold; */
+    font-size:35px;
+    letter-spacing: 8px;
+    font-family: 'Bebas Neue', sans-serif;
+    color:orange;
+    /* color:#FFFF99; */
+    margin-top: 0;
+    
+}
+.feature-end .h2{
+    /* font-weight: bold; */
+    font-size:35px;
+    letter-spacing: 8px;
+    font-family: 'Bebas Neue', sans-serif;
+    color:orange;
+    /* color:#FFFF99; */
+    margin-top: 0;
+    animation: blinking 1s infinite; 
+}
+@keyframes blinking {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #contactButton {
+    background-color: #FFA500; /* a orange color */
+    color: white; /* white text */
+    padding: 15px 32px; /* size of the button */
+    text-align: center; /* align text in the center */
+    text-decoration: none; /* remove underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* cursor will change to hand symbol on hover */
+    border: none; /* remove default button border */
+    border-radius: 4px; /* rounded corners */
+}
+
+#contactButton:hover {
+    background-color: #FF4500; /* a different orange color when mouse hovers over button */
+}
+
+
+.feature p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.feature-end p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.carousel .slide img {
+    width: 40%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+/* .carousel .legend p{
+    background: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    font-weight:bold;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    width: 40%;
+   
+    text-align: center;
+} */
+.slide1 {
+    display: none;
+  }
+  
+  .slide1.active {
+    display: block;
+  }
+  .testimonial {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .slide1 {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+  }
+  
+  .slide1.active {
+    display: block;
+  }
+  
+  .image {
+    width: 190px;
+    height: 210px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+  }
+  
+  .quote-icon {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .details {
+    margin-top: 20px;
+  }
+  
+  .name,
+  .Qualification,
+  .Experience {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .nav-btn {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .nav-btn:hover {
+    background-color: #ff5722;
+  }
+  .testimonial {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .slide1 {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+  }
+  
+  .slide1.active {
+    display: block;
+  }
+  
+  .image {
+    width: 190px;
+    height: 210px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+  }
+  
+  .quote-icon {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .details {
+    margin-top: 20px;
+  }
+  
+  .name,
+  .Qualification,
+  .Experience {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .nav-btn {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .nav-btn:hover {
+    background-color: #ff5722;
+  }
+  @media screen and (max-device-width: 540px) and (orientation: landscape) {
+    .tabs button{
+      font-size:15px;
+    }
+    .feature .h2{
+        letter-spacing: 0px;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size:20px;
+    }
+   .feature p{
+        font-size:20px;
+    }
+  } 
+  @media screen and (max-device-width: 480px) and (orientation: landscape){
+    .tabs button{
+      font-size:10px;
+    }
+    .feature .h2{
+        letter-spacing: 0px;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size:20px;
+    }
+   .feature p{
+        font-size:16px;
+    }
+  } 
+  /* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    /* some CSS here */
+    .image {
+        width: 100px;
+        height: 110px;
+        object-fit: cover;
+        /* border-radius: 50%; */
+        margin-bottom: 10px;
+      }
+    .tabs button{
+        font-size:10px;
+      }
+      .feature .h2{
+          letter-spacing: 0px;
+          font-family: 'Alegreya Sans', sans-serif;
+          font-size:20px;
+      }
+     .feature p{
+          font-size:16px;
+      }
+  }
+  
+  /* #### iPhone 4+ Portrait or Landscape #### */
+  @media screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2){
+    /* some CSS here */
+    .image {
+        width: 100px;
+        height: 110px;
+        object-fit: cover;
+        /* border-radius: 50%; */
+        margin-bottom: 10px;
+      }
+    .tabs button{
+        font-size:10px;
+      }
+      .feature .h2{
+          letter-spacing: 0px;
+          font-family: 'Alegreya Sans', sans-serif;
+          font-size:15px;
+      }
+      .content .feature p{
+          font-size:9px;
+      }
+      .details{
+        font-size: 10px;
+      }
+      .name,
+      .Qualification,
+      .Experience {
+        font-size: 10px;
+        margin-bottom: 10px;
+      }
+  }
+  
+
+  

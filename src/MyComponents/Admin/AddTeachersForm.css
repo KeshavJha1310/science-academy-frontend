@@ -1,0 +1,346 @@
+.card-admin {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+   /* margin-top:10px; */
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.adminform{
+  position: relative;
+  margin-top: 1em;
+
+}
+.teacherlist{
+  height:100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.Submitbutton{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.bttn{
+  width: 14em;
+}
+/* Improved mobile UI styling */
+@media screen and (max-width: 699px) {
+  .card-admin {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      position: relative;
+      /* height: auto; */
+      margin: 10px auto; /* Center horizontally */
+      max-width: 350px; /* Adjust width for small screens */
+      overflow-y: auto; /* Allow scrolling if needed */
+  }
+
+  .input-admin, .select-admin {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #BEBEBE;
+      border-radius: 5px;
+      background-color: #eee;
+      font-size: 16px; /* Increase font size for readability */
+      background-color: rgb(247, 247, 247);
+  }
+  
+  .input-admin-file {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #BEBEBE;
+      border-radius: 5px;
+      background-color: #eee;
+      font-size: 16px; /* Increase font size for readability */
+      background-color: rgb(247, 247, 247);
+
+  }
+
+  .add-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #1E90FF;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      margin-top: 15px;
+      cursor: pointer;
+  }
+
+  /* File upload button */
+  .file-upload {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 12px;
+      background-color: #eee;
+      color: #666;
+      border: 1px solid #BEBEBE;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+  }
+
+  /* Improved preview image styling */
+  .image-preview {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+  }
+
+  .file-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+      color: white;
+      font-size: 14px; /* Adjust font size */
+  }
+
+  .file-list li {
+      margin-bottom: 8px;
+      color: white;
+  }
+
+  /* Wrapper and notice-item adjustments */
+  .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 2em;
+  }
+
+  .notice-item {
+      background-color: #2B2F38;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .notice-item span {
+      font-size: 16px;
+      font-weight: bold;
+      color: whitesmoke;
+      flex: 1;
+      margin-right: 8px;
+  }
+
+  .delete-button {
+      background-color: #FF6347;
+      color: #fff;
+      border: none;
+      padding: 4px 6px;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+}
+
+/* Further adjustments for very small screens (extra small devices) */
+@media screen and (max-width: 384px) {
+  .card-admin {
+      padding: 15px;
+      max-width: 280px; /* Reduce width for very small screens */
+  }
+
+  .input-admin, .select-admin {
+      padding: 8px;
+      font-size: 14px; /* Slightly smaller text for readability */
+  }
+  .input-admin-file{
+      padding: 8px;
+      font-size: 14px; /* Slightly smaller text for readability */
+  }
+
+  .add-btn {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  .image-preview {
+      width: 60px;
+      height: 60px;
+  }
+
+  .notice-item span {
+      font-size: 14px;
+  }
+}
+
+
+.input-admin {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    color:black;
+    background-color: rgb(247, 247, 247);
+
+}
+.input-admin-file {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    color:black;
+    background-color: rgb(247, 247, 247);
+
+}
+
+select {
+    width: 100%;
+    padding: 7px 20px;
+    margin: 0px 0px;
+    border: 1px solid #BEBEBE;
+    border-radius: 5px;
+    margin-right: 13px;
+    background-color: #eee;
+    height: 42px;
+    background-color: rgb(247, 247, 247);
+
+}
+
+.add-btn{
+    padding: 10px;
+    background-color: blue;
+    color: #eee;
+    border: none;
+    border-radius: 7px;
+}
+.AdminPanel{
+    height:100;
+    display: flex;
+    background-color: #0F1A2D !important;
+}
+
+  .sidebar {
+    flex: 2; /* This will make the sidebar take up the available space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container {
+
+    height: 100%;
+    left: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+  }
+  .file-list {
+    list-style: none; /* Remove the default list bullet */
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  
+  .file-list li {
+    margin-bottom: 5px; /* Add some spacing between the list items (file names) */
+    color: white;
+  } 
+  /* AddNoticeForm.css */
+.image-preview {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+
+  .wrapper {
+    display: flex; /* Display items in a row */
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap:15px; /* Add a 1rem (16px) gap between items */
+    margin-top:5em;
+  }
+
+  .notice-item {
+    /* background-color: #f0f0f0; */
+    border: 1px solid #ccc;
+    border-radius:10px;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    align-items: center;
+    display: inline-flex; /* Display items inline within the notice-item container */
+  }
+
+.notice-item span {
+  font-size: 18px;
+  font-weight: bold;
+  color: whitesmoke;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.btns{
+  display: flex;
+  gap: 10px;
+}
+.icons{
+  display: flex;
+}
+.view-button{
+  background-color:rgb(255, 208, 0);
+  color: #000000;
+  border: none;
+  padding: 4px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.view-button :hover {
+  opacity: 0.8;
+}
+.edit-button{
+  background-color:rgb(0, 102, 255);
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-button {
+  background-color:red;
+  color: #fff;
+  border: none;
+  padding: 4px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+

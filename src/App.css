@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: #FFFF99;
+  height:100%;
+  width:100%;
+ /* background-image: url('C:\Users\Admin\Desktop\science_academy\src\images\5bcd6fef-0d62-434a-af23-d331077c2616.jpg'); */
+ background-repeat: no-repeat;
+ background-size: cover;
+ overflow-x: hidden;
+ 
+}
+.mapcon{
+  position:relative;
+  height:30vh;
+  width:100%;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2b2e4a;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5a5f8d;
+  border-radius: 10px;
+  border: 2px solid #2b2e4a;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #5a5f8d #2b2e4a;
+}
+
+::-webkit-scrollbar-horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #767da8;
+}
+

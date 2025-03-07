@@ -1,0 +1,17 @@
+.AdminPanel_AddSubject{
+    position: relative;
+    background-color: #0F1A2D ;
+    height: 100%;
+}
+.addsubjectForm{
+    position: relative;
+    display: flex;  
+}
+
+@media(max-width:700px) {
+    .AdminPanel_AddSubject{
+        position: relative;
+        background-color: #0F1A2D ;
+        height: 100%;
+    }
+}

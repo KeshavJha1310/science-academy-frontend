@@ -1,0 +1,34 @@
+.class-timing-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .class-timing {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #4e73df;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .class-day {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .class-timing-details {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  

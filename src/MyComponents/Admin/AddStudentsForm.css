@@ -1,0 +1,213 @@
+/* General styles for .card-admin1 */
+.card-admin1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    margin-top: 5em;
+}
+.card-admin1-addTeacher {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: inherit;
+    width: 50%;
+    height: 100%;
+    margin-top: 5em;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Space between columns */
+    /* width: 100%; */
+}
+
+/* Styles for laptops and larger screens */
+@media screen and (min-width: 700px) {
+    .card-admin1 {
+        max-width: 100%; /* Centered and constrained */
+        margin: 72px auto; /* Horizontal centering */
+        height: 100%; /* Let height adjust based on content */
+        position: relative;
+    }
+    .card-admin1-addTeacher {
+        max-width: 599.99px; /* Centered and constrained */
+        width: auto;
+        margin: 72px auto; /* Horizontal centering */
+        height: 100%; /* Let height adjust based on content */
+        position: relative;
+    }
+
+}
+
+/* Responsive styles for smartphones */
+@media screen and (max-width: 699px) {
+    .card-admin1 {
+        max-width:100%; /* Adjust form size for small screens */
+        margin: 75px auto; /* Horizontal centering */
+        height: auto; /* Auto height for flexibility */
+    }
+    .card-admin1-addTeacher {
+        max-width: 300px; /* Centered and constrained */
+        margin: 72px auto; /* Horizontal centering */
+        height: 100%; /* Let height adjust based on content */
+        position: relative;
+    }
+
+    .select-admin {
+        width: 100%;
+        padding: 14px;
+        margin: 5px 0;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: rgb(247, 247, 247);
+    }
+    .input-admin {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #000000;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        color: black;
+        background-color: rgb(247, 247, 247);
+    }
+    .input-admin-file {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #000000;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        background-color: rgb(247, 247, 247);
+        padding: 10px   ;
+       
+    }
+    .form-grid {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+    select{
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+    }
+}
+
+
+@media screen and (max-width: 384px) {
+    .card-admin1 {
+        max-width: 280px;
+    }
+    .select-admin {
+        width: 130px;
+        padding: 5px 10px;
+        margin: 5px 0;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: rgb(247, 247, 247);
+    }
+    .input-admin {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #000000;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        background-color: rgb(247, 247, 247);
+
+    }
+    .input-admin-file {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #000000;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        background-color: rgb(247, 247, 247);
+
+    }
+}
+
+/* General Input and Button Styles */
+.input-admin {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    padding: 10px 20px; /* Adjusted padding for consistency */
+    background-color: rgb(247, 247, 247);
+
+}
+.input-admin-file {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    padding: 10px 20px; /* Adjusted padding for consistency */
+    background-color: rgb(247, 247, 247);
+
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    margin: 5px 0;
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    background-color: rgb(247, 247, 247);
+
+}
+
+.add-btn {
+    padding: 10px;
+    background-color: blue;
+    color: #eee;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #0056b3; /* Add hover effect for better interactivity */
+}
+
+/* Admin Panel Background */
+.AdminPanel  {
+    position: absolute !important;
+    background-color: #0F1A2D !important;
+ /* Adjust height to cover the viewport */
+}
+
+/* Sidebar and Form Container Adjustments */
+.sidebar {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b2845;
+    padding: 20px;
+}
+
+.form-container {
+    width: 75%; /* Adjusted width for better responsiveness */
+    margin-left: 25%; /* Leaves space for the sidebar */
+    padding: 20px;
+    position: relative; /* Changed to relative to avoid fixed positioning */
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    .form-container {
+        width: 100%;
+        margin-left: 0; /* No sidebar for smaller screens */
+        padding: 20px;
+    }
+}
+@media (min-height:730px) {
+    .AdminPanel{
+        height: auto;
+    }
+}

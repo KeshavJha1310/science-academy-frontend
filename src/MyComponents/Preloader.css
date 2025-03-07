@@ -1,0 +1,50 @@
+.preloader{
+    height:100%;
+    width:100%;
+    background:black;
+    color:white;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:o;
+    z-index:55;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+.preloader .texts-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:80px;
+    width:400px;
+    font-size:20px;
+    font-weight:800px;
+    overflow:hidden;
+    color:white;
+}
+/* Define classic shades for the texts */
+.texts-container span:nth-child(1) {
+    color: #ffd700; /* Gold */
+}
+
+.texts-container span:nth-child(2) {
+   color: #d4af37; /* Goldenrod */
+}
+
+.texts-container span:nth-child(3) {
+     /* color: #c0c0c0; Silver */
+             /* Peruvian brown */
+     /* color: #b0c4de; */
+     color: hsl(43, 75%, 65%); /* Lighter Goldenrod */
+}
+
+/* You can add more shades of gold or silver as needed */
+.texts-container span:nth-child(4) {
+     /* Light steel blue */
+}
+
+.texts-container span:nth-child(5) {
+    color: #cd853f; /* Peruvian brown */
+}
