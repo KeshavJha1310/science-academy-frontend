@@ -88,7 +88,7 @@ const handleChange = (e) => {
     console.log("Submitting formDataObj with data:", Array.from(formDataObj.entries()));
   
     axios
-      .post('http://127.0.0.1:5000/api/students', formDataObj , {
+      .post('https://science-academy-server.vercel.app/api/students', formDataObj , {
         headers: {
           'Content-Type': 'multipart/form-data',  
         }

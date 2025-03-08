@@ -23,7 +23,7 @@ function AddNoticeForm() {
   }, []);
 
   const fetchNoticeImages = () =>{
-    axios.get('http://127.0.0.1:5000/api/notice_images')
+    axios.get('https://science-academy-server.vercel.app/api/notice_images')
       .then(res => {
         setData(res.data.data);
       })
@@ -40,7 +40,7 @@ function AddNoticeForm() {
     });
   
     formData.append('title' , className )
-    axios.post('http://127.0.0.1:5000/api/notice_images' , formData)
+    axios.post('https://science-academy-server.vercel.app/api/notice_images' , formData)
     .then(res => {
        
         const { message } = res.data; 
@@ -60,7 +60,7 @@ function AddNoticeForm() {
   };
   const handleDelete = (noticeId) => {
     axios
-      .delete(`http://127.0.0.1:5000/api/notice_images/${noticeId}`)
+      .delete(`https://science-academy-server.vercel.app/api/notice_images/${noticeId}`)
       .then((res) => {
         let message = res.data.message
         if(message === 'Notice_deleted_successfully'){

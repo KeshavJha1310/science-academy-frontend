@@ -12,7 +12,7 @@ const AdminLogin = () => {
 //  const [loggedIn, setLoggedIn] = useState(false);
 //   const handleClick = () => {
 //     console.log(AdminId, AdminPassword);
-//     axios.post('http://127.0.0.1:5000/api/adminLogin', {
+//     axios.post('https://science-academy-server.vercel.app/api/adminLogin', {
 //         AdminId: AdminId,
 //         AdminPassword: AdminPassword
 //     })
@@ -35,7 +35,7 @@ const handleSubmit  = (e) => {
   e.preventDefault(); // Prevent the default form submission
   console.log(AdminId, AdminPassword);
   axios
-    .post('http://127.0.0.1:5000/admin/adminLogins', {
+    .post('https://science-academy-server.vercel.app/admin/adminLogins', {
       AdminId : AdminId,
       AdminPassword : AdminPassword ,
     })
