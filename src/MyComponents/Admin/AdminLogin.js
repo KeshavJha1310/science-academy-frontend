@@ -45,8 +45,8 @@ const handleSubmit  = (e) => {
       let token = res.data.token
       console.log(message);
       console.log(token);
-      localStorage.setItem('token',token)
       if (message === 'Success') {
+        localStorage.setItem('token',token)
         navigate('https://scienceacademys.com/Admin/AdminPanel');
         showNotification('Login Successful', 'You have successfully logged in');
       } else if(message === 'InvalidAdminId' ) {
