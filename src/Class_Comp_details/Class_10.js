@@ -25,10 +25,10 @@ const Class_10 = () => {
       
           <StudentLoginButton />
    
-        <div className='tablecon '>
+        {/* <div className='tablecon '>
              <h3>Fees Payment Structure</h3>
         <Class_t10/>
-        </div>
+        </div> */}
         <div className='tablecon '>
         <h3>Timings</h3>
         <Class_T10/>

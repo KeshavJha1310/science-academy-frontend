@@ -30,10 +30,10 @@ const Class_1 = () => {
         
         <PaymentOffer/>
         </div>
-        // <div className='tablecon '>
-        //     <h3>Fees Payment Structure</h3>
-        // <Class_t1/>
-        </div>
+         {/* <div className='tablecon '>
+             <h3>Fees Payment Structure</h3>
+         <Class_t1/>
+        </div> */}
       
         <div className='tablecon '>
         <h3>Timings</h3>

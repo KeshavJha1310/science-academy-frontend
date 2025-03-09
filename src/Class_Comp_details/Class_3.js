@@ -24,11 +24,11 @@ const Class_3 = () => {
      </div>
       
           <StudentLoginButton />
-   
+{/*    
         <div className='tablecon '>
         <h3>Fees Payment Structure</h3>
         <Class_t3/>
-        </div>
+        </div> */}
         <div className='tablecon '>
         <h3>Timings</h3>
         <Class_T3/>
