@@ -23,7 +23,6 @@ const Notice = ({slides}) => {
    const sliderstyle ={
     position:"relative",
     height:"100%",
-    backgroundImage: `url('../images/5bcd6fef-0d62-434a-af23-d331077c2616.jpg')`,
     backgroundImage: `url(${noticeImage2})`
    };
     const slidestyles = {
