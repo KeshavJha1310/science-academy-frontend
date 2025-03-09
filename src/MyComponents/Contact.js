@@ -73,7 +73,7 @@ const Contact = () => {
               <a href="https://facebook.com" className="social-icon">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://whatsapp.com" className="social-icon whatsapp">
+              <a href="https://wa.me/8149397762" target="_blank" className="social-icon whatsapp">
                 <i className="fab fa-whatsapp"></i>
               </a>
               <a href="https://instagram.com" className="social-icon instagram">
