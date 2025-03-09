@@ -47,7 +47,7 @@ const App = () =>{
 ];
 const notice ={
   position: 'relative',
-  // top: '30px',
+  // top: '30px', 
   height: '60vh',
  
   width: '100%',

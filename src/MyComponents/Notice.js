@@ -18,6 +18,7 @@ const Notice = ({slides}) => {
     //             console.log(err)
     //         })
     // },[])
+    console.log("slides :- ",slides)
 
    const[currentIndex, setCurrentIndex] = useState(0);
    const sliderstyle ={

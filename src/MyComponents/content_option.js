@@ -1,5 +1,5 @@
 const contactConfig = {
-    YOUR_EMAIL: '  yabhay1521@gmail.com',
+    YOUR_EMAIL: '  scienceacademy0128@gmail.com',
     YOUR_FONE: '  +91-8149397762',
     description:
       'Our pleasure to talk with you !',
