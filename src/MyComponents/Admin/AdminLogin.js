@@ -8,7 +8,8 @@ const AdminLogin = () => {
     const navigate = useNavigate()
   const [AdminId, setAdminId] = useState('');
   const [AdminPassword, setAdminPassword] = useState('');
-
+  const [isError,setIsError] = useState(false)
+  const [showErrorMessage,setShowErrorMessage] = useState('')
 //  const [loggedIn, setLoggedIn] = useState(false);
 //   const handleClick = () => {
 //     console.log(AdminId, AdminPassword);
@@ -45,14 +46,19 @@ const handleSubmit  = (e) => {
       let token = res.data.token
       console.log(message);
       console.log(token);
+      setShowErrorMessage('')
       if (message === 'Success') {
+        setIsError(false);
         localStorage.setItem('token',token)
-        navigate('https://scienceacademys.com/Admin/AdminPanel');
+        navigate('Admin/AdminPanel');
         showNotification('Login Successful', 'You have successfully logged in');
       } else if(message === 'InvalidAdminId' ) {
-
+        setIsError(true);
+        setShowErrorMessage('Invalid Admin ID');
         showNotification('Login UnSuccessful', 'Invalid Admin ID');
       }else if( message === 'InvalidAdminPassword') {
+        setIsError(true);
+        setShowErrorMessage('Invalid Admin Password')
         showNotification('Login UnSuccessful', 'Invalid Admin Password');
       }
       // else if(message === 'InvalidCredentials'){
@@ -111,6 +117,13 @@ return (
           <i className="fa-solid fa-eye" /> 
         )}
       </div>
+
+      { isError ? (
+        <p>{showErrorMessage}</p>
+      ):(
+        <p>Login Successfull</p>
+      )
+      }
     
       <button href='/Admin/AdminPanel'  type="submit" className="btn btn-primary">Login</button> 
  
