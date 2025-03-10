@@ -80,7 +80,7 @@ const Contact = () => {
                 <i className="fab fa-instagram"></i>
               </a>
               <a
-                href="https://goo.gl/maps/uQnugPNm3JL5SajE9"
+                href="https://maps.app.goo.gl/csb6P9QpAenYLDAd9"
                 className="social-icon"
               >
                 <i className="fas fa-map-marked-alt"></i>
