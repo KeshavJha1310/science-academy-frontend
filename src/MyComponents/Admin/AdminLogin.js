@@ -125,9 +125,7 @@ return (
       )
       } */}
     
-   <button type="button" class="btn btn-primary" onclick="window.location.replace('/Admin/AdminPanel')">
-  Login
-</button>
+   <button type="button" class="btn btn-primary"><a href='/Admin/AdminPanel'>Login</a></button>
 
     </form>
     {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10px' , width:'100%' }}>
