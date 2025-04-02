@@ -125,9 +125,10 @@ return (
       )
       } */}
     
-        <button type="button" class="btn btn-primary" onclick="window.location.href='/Admin/AdminPanel'">
-          Login
-        </button> 
+   <button type="button" class="btn btn-primary" onclick="window.location.replace('/Admin/AdminPanel')">
+  Login
+</button>
+
     </form>
     {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10px' , width:'100%' }}>
       <button  onClick={()=>{navigate('/')}} style={{backgroundColor:'transparent'}} className="btn">Back</button> 
