@@ -130,7 +130,7 @@ return (
       )
       } */}
     
-   <button href="/Admin/AdminPanel" type="button" className="btn btn-primary">
+   <button href="/Admin/AdminPanel" type="submit" className="btn btn-primary">
       Login
     </button>
     </form>
