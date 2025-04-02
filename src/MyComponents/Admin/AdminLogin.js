@@ -32,6 +32,11 @@ const AdminLogin = () => {
 //     });
 // }
 
+
+  const handleLogin = () => {
+    navigate('/Admin/AdminPanel'); // This will navigate to the AdminPanel
+  };
+
 const handleSubmit  = (e) => {
   e.preventDefault(); // Prevent the default form submission
   console.log(AdminId, AdminPassword);
@@ -125,8 +130,9 @@ return (
       )
       } */}
     
-   <button type="button" class="btn btn-primary"><a href='/Admin/AdminPanel'>Login</a></button>
-
+   <button type="button" className="btn btn-primary" onClick={handleLogin}>
+      Login
+    </button>
     </form>
     {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10px' , width:'100%' }}>
       <button  onClick={()=>{navigate('/')}} style={{backgroundColor:'transparent'}} className="btn">Back</button> 
