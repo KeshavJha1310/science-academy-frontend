@@ -163,7 +163,7 @@ const SubjectDetails = ()=>{
                 Swal.fire({
                     icon: "error",
                     title: "Delete Subject",
-                    text: `${res.data.message}`,
+                    text: `${error}`,
                   });
             })
       }
