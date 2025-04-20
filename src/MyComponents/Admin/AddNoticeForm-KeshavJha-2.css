@@ -1,0 +1,242 @@
+.card-admin {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+   
+    width: 100%;
+    margin-top:10px;
+    height: 70vh;
+}
+.teacherlist{
+  height:100vh;
+}
+.reload-button-container-teacherList{
+  display: flex;
+  position: relative;
+  justify-content: end;
+  padding: 0 0.5em;
+  right: 2em;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+}
+/* Add responsive styles for laptops and larger screens */
+@media screen and (min-width: 700px) {
+    .card-admin {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+       
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: relative;
+        height: 81vh;
+        margin: 32px auto; /* Center the card horizontally */
+        padding: 20px;
+        max-width: 600px; /* Adjust as needed */
+      
+    }
+  }
+
+  
+  /* Add responsive styles for smartphones */
+  @media screen and (max-width: 699px) {
+    .card-admin {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: relative;
+        height: 100vh;
+    /* Center the card horizontally */
+        padding: 20px;
+      max-width: 300px; /* Adjust as needed */
+    }
+    .select-admin {
+        width: 130px;
+        padding: 14px 20px;
+        margin: 5px 0px;
+        border: 1px solid #BEBEBE;
+        border-radius: 5px;
+        margin-right: 13px;
+        background-color: #eee;
+    }
+    .input-admin {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+}
+    .input-admin-file {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+}
+  }
+
+  @media screen and (max-width: 384px){
+    .card-admin {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: relative;
+        height: 100vh;
+       
+    }
+    .select-admin {
+        width:130px;
+      
+        /* padding: 14px 20px; */
+        margin: 5px 0px;
+        border: 1px solid #BEBEBE;
+        border-radius: 5px;
+        margin-right: 13px;
+        background-color: #eee;
+    }
+    .input-admin {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+}
+    .input-admin-file {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+}
+
+.btn .btn-primary{
+  left: 5em !important;
+}
+
+
+  }
+
+.input-admin {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    color:black;
+}
+.input-admin-file {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    color:whitesmoke;
+}
+
+select {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 5px 0px;
+    border: 1px solid #BEBEBE;
+    border-radius: 5px;
+    margin-right: 13px;
+    background-color: #eee;
+}
+
+.add-btn{
+    padding: 10px;
+    background-color: blue;
+    color: #eee;
+    border: none;
+    border-radius: 7px;
+}
+.AdminPanel{
+    height:100;
+    display: flex;
+    background-color: #0F1A2D !important;
+}
+
+  .sidebar {
+    flex: 2; /* This will make the sidebar take up the available space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container {
+    height: 100%;
+    left: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+  }
+  .file-list {
+    list-style: none; /* Remove the default list bullet */
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  
+  .file-list li {
+    margin-bottom: 5px; /* Add some spacing between the list items (file names) */
+    color: white;
+  } 
+  /* AddNoticeForm.css */
+.image-preview {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+
+  .wrapper {
+    display: flex; /* Display items in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap:15px; /* Add a 1rem (16px) gap between items */
+    margin-top:5px;
+  }
+
+  .notice-item {
+    /* background-color: #f0f0f0; */
+    border: 1px solid #ccc;
+    border-radius:10px;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    align-items: center;
+    display: inline-flex; /* Display items inline within the notice-item container */
+  }
+
+.notice-item span {
+  font-size: 18px;
+  font-weight: bold;
+  color: whitesmoke;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.delete-button {
+  background-color:red;
+  color: #fff;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
