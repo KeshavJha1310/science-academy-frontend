@@ -33,14 +33,14 @@ const Footer = () => {
      Prepare for exams and pursue your dream career.<span style={{fontWeight:'bold', color:'red',fontSize:'20px'}}> Contact us for a consultation.</span><br/>
       {/* <span style={{fontWeight:'bold', color:'red',fontSize:'20px'}}>Follow us on social media for updates.</span> */}</p>
       <div class="social-icons">
-              <a href="https://facebook.com" class="social-icon">
+              <a href="https://www.facebook.com/share/1LR1dcNBxX/" class="social-icon">
             
 <i class="fa-brands fa-facebook"></i>
               </a>
-              <a href="https://whatsapp.com" class="social-icon whatsapp">
+              <a href="https://wa.me/8149397762" class="social-icon whatsapp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
-              <a href="https://instagram.com" class="social-icon instagram">
+              <a href="https://www.instagram.com/scienceacademy354" class="social-icon instagram">
               <i class="fa-brands fa-instagram" style={{color: "#950451,"}}></i>
               </a>
               <a href="https://goo.gl/maps/uQnugPNm3JL5SajE9" class="social-icon">
