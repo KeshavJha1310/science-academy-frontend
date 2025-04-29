@@ -53,7 +53,7 @@ function AddStudents() {
     formData.append('Gender', gender)
     formData.append('Class', sections)
 
-    axios.post('https://science-academy-server.vercel.app/api/students', formData)
+    axios.post('http://localhost:5000/api/students', formData)
       .then(res => {
         console.log(res.data.data)
 

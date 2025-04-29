@@ -31,14 +31,14 @@ const SubjectDetails = ()=>{
 
       const fetchSubjects = () => {
         axios
-          .get('https://science-academy-server.vercel.app/api/subjectsDetails')
+          .get('http://localhost:5000/api/subjectsDetails')
           .then((res) => setSubjectData(res.data.data))
           .catch((err) => console.error(err));
       };
 
       const fetchTeachers = ()=>{
           axios
-          .get("https://science-academy-server.vercel.app/api/teachers")
+          .get("http://localhost:5000/api/teachers")
           .then((res) => {
             const formattedTeachers = res.data.data.map((teacher) => ({
               value: teacher._id,
@@ -113,7 +113,7 @@ const SubjectDetails = ()=>{
           try {
             console.log("formVlues :- ",formValues)
             // API call to update the subject
-            const response = await axios.put(`https://science-academy-server.vercel.app/api/subjects/${subject._id}`, formValues);
+            const response = await axios.put(`http://localhost:5000/api/subjects/${subject._id}`, formValues);
             Swal.fire({
               icon: "success",
               title: "updated successfully!",
@@ -149,7 +149,7 @@ const SubjectDetails = ()=>{
           
       const deleteSubect=(subjectId)=>{
             axios
-            .delete(`https://science-academy-server.vercel.app/api/subjects/${subjectId}`)
+            .delete(`http://localhost:5000/api/subjects/${subjectId}`)
             .then((res)=>{
                 Swal.fire({
                     icon: "success",

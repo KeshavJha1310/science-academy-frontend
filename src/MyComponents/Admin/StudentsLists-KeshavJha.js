@@ -21,7 +21,7 @@ const StudentsLists = () => {
 
   useEffect(() => {
     // Fetch student data from the server
-    axios.get('https://science-academy-server.vercel.app/api/studentsList')
+    axios.get('http://localhost:5000/api/studentsList')
       .then(res => {
         const fetchedStudents = res.data.data;
         if (Array.isArray(fetchedStudents)) {
@@ -133,7 +133,7 @@ const StudentsLists = () => {
               }
             ).map((student) => (
               <div class="cardlist" key={student.id} >
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} class="card-img-top" alt="students" style={cardimg} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} class="card-img-top" alt="students" style={cardimg} />
                 <div class="card-body">
                   <h5 class="card-title" style={{ color: '#dadada', wordWrap: 'break-word', whiteSpace: 'normal', overflow: 'hidden', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   {/* <div className="d-flex align-items-start">
@@ -168,7 +168,7 @@ const StudentsLists = () => {
               }
             ).map((student) => (
               <div class="cardlist" key={student.id} >
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} class="card-img-top" alt="students" style={cardimg} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} class="card-img-top" alt="students" style={cardimg} />
                 <div class="card-body">
                   <h5 class="card-title" style={{ color: '#dadada', whiteSpace: 'normal', overflow: 'hidden', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   {/* <div className="d-flex align-items-start">
@@ -201,7 +201,7 @@ const StudentsLists = () => {
               }
             ).map((student) => (
               <div class="cardlist" key={student.id} >
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} class="card-img-top" alt="students" style={cardimg} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} class="card-img-top" alt="students" style={cardimg} />
                 <div class="card-body">
                   <h5 class="card-title" style={{ color: '#dadada', whiteSpace: 'normal', overflow: 'hidden', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   {/* <div className="d-flex align-items-start">
@@ -234,7 +234,7 @@ const StudentsLists = () => {
               }
             ).map((student) => (
               <div class="cardlist" key={student.id} >
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} class="card-img-top" alt="students" style={cardimg} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} class="card-img-top" alt="students" style={cardimg} />
                 <div class="card-body">
                   <h5 class="card-title" style={{ color: '#dadada', whiteSpace: 'normal', overflow: 'hidden', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex align-items-start">

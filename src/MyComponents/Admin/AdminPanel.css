@@ -1,5 +1,12 @@
-  .AdminPanel{
-       background-color:#0F1A2D !important;
-   position: absolute !important;
-    }
-    
+.AdminPanel {
+  background-color: #0F1A2D !important;
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+}
+
+.contentgraph {
+  position: relative;
+  margin-top: auto;
+  padding: 20px;
+}
