@@ -25,7 +25,7 @@ const App = () =>{
   const [data, setData] = useState([])
 
   useEffect(()=>{
-          axios.get('https://science-academy-server.vercel.app/api/notice_images')
+          axios.get('http://localhost:5000/api/notice_images')
               .then(res => {
                   
                   setData(res.data.data)
@@ -37,7 +37,7 @@ const App = () =>{
   const noticePaths = data.map((item) => item.notice.replace(/\\/g, '/'));
   const slides = [
     { url: noticeImage },
-    ...noticePaths.map((path) => ({ url: `https://science-academy-server.vercel.app/${path}` })),
+    ...noticePaths.map((path) => ({ url: `http://localhost:5000/${path}` })),
   ];
   console.log(slides);
   const cardspic = [

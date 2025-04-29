@@ -69,7 +69,7 @@ const WhyUs = () => {
 
     const fetchSubjects = () => {
       axios
-        .get("https://science-academy-server.vercel.app/api/subjectsDetails")
+        .get("http://localhost:5000/api/subjectsDetails")
         .then((response) => {
           const fetchedSubjects = response.data.data;
           console.log("Subjects Data:", fetchedSubjects);
@@ -89,7 +89,7 @@ const WhyUs = () => {
 
     const fetchTeachers = () => {
       axios
-        .get("https://science-academy-server.vercel.app/api/teachers")
+        .get("http://localhost:5000/api/teachers")
         .then((response) => {
           const fetchedTeachers = response.data.data;
           console.log("Teachers Data:", fetchedTeachers);
@@ -105,7 +105,7 @@ const WhyUs = () => {
       Qualification: teacher.qualification,
       Experience: teacher.experiance,
       Subjects: getSubjectNames(teacher.subject).join(", "),
-      image: `https://science-academy-server.vercel.app/${teacher.teacherPic}`,
+      image: `http://localhost:5000/${teacher.teacherPic}`,
     }))];
  
     const toggleTab = (index) => {

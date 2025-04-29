@@ -22,7 +22,7 @@ const StudentsLists = () => {
 
   // Fetch student data from the server
   useEffect(() => {
-    axios.get('https://science-academy-server.vercel.app/api/studentsList')
+    axios.get('http://localhost:5000/api/studentsList')
       .then(res => {
         const fetchedStudents = res.data.data;
         if (Array.isArray(fetchedStudents)) {
@@ -103,7 +103,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class1).length > 0 ? (
             filterStudentsBySearch(class1).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -145,7 +145,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class2).length > 0 ? (
             filterStudentsBySearch(class2).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -187,7 +187,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class3).length > 0 ? (
             filterStudentsBySearch(class3).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -229,7 +229,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class4).length > 0 ? (
             filterStudentsBySearch(class4).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -271,7 +271,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class5).length > 0 ? (
             filterStudentsBySearch(class5).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -313,7 +313,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class6).length > 0 ? (
             filterStudentsBySearch(class6).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -355,7 +355,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class7).length > 0 ? (
             filterStudentsBySearch(class7).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -397,7 +397,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class8).length > 0 ? (
             filterStudentsBySearch(class8).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -439,7 +439,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class9).length > 0 ? (
             filterStudentsBySearch(class9).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -481,7 +481,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class10).length > 0 ? (
             filterStudentsBySearch(class10).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -523,7 +523,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class11).length > 0 ? (
             filterStudentsBySearch(class11).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">
@@ -565,7 +565,7 @@ const StudentsLists = () => {
           {filterStudentsBySearch(class12).length > 0 ? (
             filterStudentsBySearch(class12).map(student => (
               <div className="cardlist" key={student.id}>
-                <img src={`https://science-academy-server.vercel.app/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
+                <img src={`http://localhost:5000/${student.StudentPic}`} className="card-img-top" alt="students" style={cardStyle} />
                 <div className="card-body">
                   <h5 className="card-title" style={{ color: 'black', wordWrap: 'break-word', maxWidth: '200px', fontSize: '16px' }}>{student.StudentName}</h5>
                   <div className="d-flex justify-content-between align-items-start">

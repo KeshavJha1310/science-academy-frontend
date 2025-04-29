@@ -14,7 +14,7 @@ const Contact = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://science-academy-server.vercel.app/api/emails', {
+      const response = await axios.post('http://localhost:5000/api/emails', {
         userName,
         userEmail,
         userMessage,

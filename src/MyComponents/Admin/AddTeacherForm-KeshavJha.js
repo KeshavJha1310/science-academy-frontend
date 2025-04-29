@@ -67,7 +67,7 @@ function AddTeachers() {
     });
 
     axios
-      .post('https://science-academy-server.vercel.app/api/teachers', formData, {
+      .post('http://localhost:5000/api/teachers', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
       .then((res) => {
