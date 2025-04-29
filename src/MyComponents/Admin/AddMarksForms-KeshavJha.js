@@ -78,7 +78,7 @@ const AddMarksForms = () => {
     console.log(formData)
 
     axios
-      .post("http://localhost:5000/api/addMarks", formData)
+      .post("https://science-academy-server.vercel.app/api/addMarks", formData)
       .then((res) => {
         console.log("Response:", res.data);
         showNotification(
@@ -105,7 +105,7 @@ const AddMarksForms = () => {
 
   const fetchExamDetails = (selectedId) => {
     axios
-      .get("http://localhost:5000/api/getLaunchedExam")
+      .get("https://science-academy-server.vercel.app/api/getLaunchedExam")
       .then((response) => {
         const currentDate = new Date();
         const examDetails = response.data.data;
@@ -155,7 +155,7 @@ const getSubjectName = (subjectId) =>{
 
 const fetchClassData = () => {
   axios
-    .get("http://localhost:5000/api/classData")
+    .get("https://science-academy-server.vercel.app/api/classData")
     .then((res) => {
       if (res.data && res.data.data) {
         setAllClassData(res.data.data)
@@ -172,7 +172,7 @@ const fetchClassData = () => {
 };
 
 const fetchStudents = (className) =>{
-  axios.get('http://localhost:5000/api/studentsList')
+  axios.get('https://science-academy-server.vercel.app/api/studentsList')
   .then(res => {
     const fetchedStudents = res.data.data;
     if (Array.isArray(fetchedStudents)) {
@@ -193,7 +193,7 @@ const fetchStudents = (className) =>{
 
   const fetchSubjectDetails = () =>{
   axios
-  .get('http://localhost:5000/api/subjectsDetails')
+  .get('https://science-academy-server.vercel.app/api/subjectsDetails')
   .then((response)=>{
       const subjectDetails = response.data.data;
       if(subjectDetails){

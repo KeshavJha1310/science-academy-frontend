@@ -29,7 +29,7 @@ const ExamsDetails = (props, ref) => {
 
     const fetchExamDetails = () => {
         axios
-            .get("http://localhost:5000/api/getLaunchedExam")
+            .get("https://science-academy-server.vercel.app/api/getLaunchedExam")
             .then((response) => {
                 const currentDate = new Date();
                 const examDetails = response.data.data;
@@ -65,7 +65,7 @@ const ExamsDetails = (props, ref) => {
 
     const fetchClassDetails = () =>{
         axios
-        .get('http://localhost:5000/api/classData')
+        .get('https://science-academy-server.vercel.app/api/classData')
         .then((response)=>{
             const classDetails = response.data.data;
             if(classDetails){
@@ -77,7 +77,7 @@ const ExamsDetails = (props, ref) => {
 
     const fetchSubjectDetails = () =>{
         axios
-        .get('http://localhost:5000/api/subjectsDetails')
+        .get('https://science-academy-server.vercel.app/api/subjectsDetails')
         .then((response)=>{
             const subjectDetails = response.data.data;
             if(subjectDetails){

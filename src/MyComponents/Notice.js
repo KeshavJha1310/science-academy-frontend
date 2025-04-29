@@ -9,7 +9,7 @@ const Notice = ({slides}) => {
 
     // const [data, setData] = useState([])
     // useEffect(()=>{
-    //     axios.get('http://localhost:5000/api/notice_images')
+    //     axios.get('https://science-academy-server.vercel.app/api/notice_images')
     //         .then(res => {
     //             console.log(res.data)
     //             setData(res.data.data)

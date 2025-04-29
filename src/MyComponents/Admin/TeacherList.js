@@ -26,7 +26,7 @@ const TeacherList = () => {
       }, []);
 
       const fetchTeachers=()=>{
-        axios.get('http://localhost:5000/api/teachers')
+        axios.get('https://science-academy-server.vercel.app/api/teachers')
         .then(res => {
           setData(res.data.data);
         })
@@ -37,7 +37,7 @@ const TeacherList = () => {
 
       const fetchSubjects = () => {
         axios
-          .get("http://localhost:5000/api/subjectsDetails")
+          .get("https://science-academy-server.vercel.app/api/subjectsDetails")
           .then((res) => {
             const formattedSubjects = res.data.data.map((subject) => ({
               value: subject._id,
@@ -66,7 +66,7 @@ const TeacherList = () => {
       
       const handleDelete = (teacherId) => {
         axios
-          .delete(`http://localhost:5000/api/teachers/${teacherId}`)
+          .delete(`https://science-academy-server.vercel.app/api/teachers/${teacherId}`)
           .then((res) => {
             let message = res.data.message
             console.log('teacher:-',res.data)
@@ -204,7 +204,7 @@ const TeacherList = () => {
             console.log(teacher._id)
             console.log(formValues)
             const response = await axios.put(
-              `http://localhost:5000/api/teachers/update/${teacher._id}`,
+              `https://science-academy-server.vercel.app/api/teachers/update/${teacher._id}`,
               formValues,
               { headers: { "Content-Type": "multipart/form-data" } }
             );

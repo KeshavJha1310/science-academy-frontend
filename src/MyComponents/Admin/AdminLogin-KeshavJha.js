@@ -15,7 +15,7 @@ const handleSubmit  = (e) => {
   e.preventDefault(); // Prevent the default form submission
   console.log(AdminId, AdminPassword);
   axios
-    .post('http://localhost:5000/admin/adminLogins', {
+    .post('https://science-academy-server.vercel.app/admin/adminLogins', {
       AdminId : AdminId,
       AdminPassword : AdminPassword ,
     })

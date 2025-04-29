@@ -37,7 +37,7 @@ const LaunchExamForm = () => {
 
   const fetchSubjects = () => {
     axios
-      .get("http://localhost:5000/api/subjectsDetails")
+      .get("https://science-academy-server.vercel.app/api/subjectsDetails")
       .then((res) =>{
         setSubjectData(
           res.data.data.map((subject) => ({
@@ -52,7 +52,7 @@ const LaunchExamForm = () => {
 
   const fetchClassData = () => {
     axios
-      .get("http://localhost:5000/api/classData")
+      .get("https://science-academy-server.vercel.app/api/classData")
       .then((res) => {
         if (res.data && res.data.data) {
           setClassData(
@@ -99,7 +99,7 @@ const LaunchExamForm = () => {
     }
 
     axios
-      .post("http://localhost:5000/api/launchExams", examFromData)
+      .post("https://science-academy-server.vercel.app/api/launchExams", examFromData)
       .then((res) => {
         console.log("Response:", res.data);
         showNotification(

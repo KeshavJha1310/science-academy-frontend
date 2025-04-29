@@ -24,7 +24,7 @@ const AddSubjectForm = () => {
 
   const fetchTeacher =() =>{
     axios
-    .get("http://localhost:5000/api/teachers")
+    .get("https://science-academy-server.vercel.app/api/teachers")
     .then((res) => {
       const formattedTeachers = res.data.data.map((teacher) => ({
         value: teacher._id,
@@ -84,7 +84,7 @@ const AddSubjectForm = () => {
     }
   
     axios
-      .post("http://localhost:5000/api/subjects", formData)
+      .post("https://science-academy-server.vercel.app/api/subjects", formData)
       .then((res) => {
         console.log("Response:", res.data);
         showNotification(
